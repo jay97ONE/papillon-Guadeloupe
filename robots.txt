@@ -1,0 +1,25 @@
+# Robots.txt pour Papillon Guadeloupe Création
+
+User-agent: *
+Allow: /
+
+# Pages à indexer en priorité
+Allow: /
+Allow: /services
+Allow: /realisations
+Allow: /contact
+Allow: /entretien-paysager
+Allow: /location-motoculteur
+
+# Sitemap
+Sitemap: https://papillon-guadeloupe.com/sitemap.xml
+
+# Bloquer les bots indésirables
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Temps de crawl (en secondes)
+Crawl-delay: 1
