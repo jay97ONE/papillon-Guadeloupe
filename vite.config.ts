@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser',
+    minify: 'esbuild', // Changed from 'terser' to 'esbuild' (faster and default)
     rollupOptions: {
       output: {
         manualChunks: {
@@ -24,7 +24,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
+    port: 5173, // Changed from 3000 to default Vite port
     open: true,
   },
   preview: {
