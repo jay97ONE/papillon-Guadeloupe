@@ -7,13 +7,13 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'esbuild', // Changed from 'terser' to 'esbuild' (faster and default)
+    minify: 'terser',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -24,7 +24,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 5173, // Changed from 3000 to default Vite port
+    port: 3000,
     open: true,
   },
   preview: {
